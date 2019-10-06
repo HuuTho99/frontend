@@ -1,0 +1,703 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.lien-he {
+  display: flex; }
+  .lien-he .logo {
+    cursor: pointer;
+    margin: 1rem; }
+    .lien-he .logo img {
+      width: 7rem;
+      height: 5rem; }
+  .lien-he .btn1 {
+    display: inline-block;
+    width: 3.7rem !important;
+    height: 3.7rem !important;
+    background: #f1f1f1;
+    border-radius: 30%;
+    text-align: center;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    margin-left: 1rem;
+    top: 1rem;
+    border: none;
+    position: relative; }
+    .lien-he .btn1 i {
+      line-height: 3.7rem !important;
+      font-size: 1.6rem !important;
+      transition: 0.3s linear;
+      margin: -6px;
+      padding: 0; }
+    .lien-he .btn1:hover i {
+      transform: scale(1.5);
+      color: #f1f1f1; }
+    .lien-he .btn1::before {
+      content: "";
+      width: 120%;
+      height: 120%;
+      background: #3498db;
+      position: absolute;
+      transform: rotate(45deg);
+      left: -110%;
+      top: 90%; }
+    .lien-he .btn1:hover::before {
+      animation: aaa 0.7s 1;
+      top: -10%;
+      left: -10%; }
+  .lien-he u {
+    top: 3rem;
+    position: relative;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: orange;
+    cursor: pointer;
+    height: 2rem; }
+  .lien-he .login-form1 {
+    display: flex;
+    margin: 2rem 4rem; }
+    .lien-he .login-form1 .btn {
+      width: 9rem;
+      height: 3rem;
+      margin: 0 1rem;
+      border-radius: 18px;
+      background: white;
+      color: black;
+      font-weight: 700;
+      border: 1px solid orange;
+      outline: none;
+      cursor: pointer;
+      transition: 0.4s; }
+      .lien-he .login-form1 .btn:hover {
+        background: orange;
+        transform: scale(1.3); }
+
+@keyframes aaa {
+  0% {
+    left: -110%;
+    top: 90%; }
+  50% {
+    left: 10%;
+    top: -30%; }
+  100% {
+    top: -10%;
+    left: -10%; } }
+.menu {
+  background-color: orange !important; }
+  .menu button {
+    z-index: 20;
+    float: right; }
+    .menu button .bg-tho {
+      background-color: white;
+      color: black;
+      border-color: rgba(0, 0, 0, 0.43); }
+  .menu .collapse ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+    padding-right: 1rem; }
+    .menu .collapse ul li .nav-link {
+      color: white; }
+    .menu .collapse ul li:hover {
+      background: orangered;
+      transform: scale(1.1);
+      border-radius: 10px; }
+
+.login-form {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background-image: url(./../../images/bg.png);
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  display: none;
+  z-index: 2;
+  border-radius: 10px; }
+  .login-form h1 {
+    margin-top: 100px;
+    font-family: "Permanent Marker", cursive;
+    color: #fff;
+    font-size: 40px; }
+  .login-form input {
+    display: block;
+    width: 100%;
+    padding: 0 16px;
+    height: 44px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: "Permanent Marker", cursive; }
+  .login-form .txtb {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px; }
+  .login-form a, .login-form p {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Permanent Marker", cursive;
+    font-size: 14px;
+    padding: 10px;
+    transition: 0.8s;
+    display: block;
+    cursor: pointer; }
+    .login-form a:hover, .login-form p:hover {
+      background: rgba(0, 0, 0, 0.3); }
+  .login-form .rangoai {
+    display: flex; }
+  .login-form .signup-btn {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    background: #487eb0;
+    color: #fff;
+    border-radius: 44px;
+    cursor: pointer;
+    transition: 0.8s; }
+    .login-form .signup-btn:hover {
+      transform: scale(0.96); }
+
+.den-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  transition: 0.5;
+  width: 100%;
+  height: 100%;
+  background: #00000085;
+  z-index: 1;
+  display: none; }
+
+.hienthi {
+  display: block; }
+
+.hienthiform {
+  display: block;
+  animation: traiqua forwards 1.5s; }
+
+@-webkit-keyframes traiqua {
+  0% {
+    margin-left: 300px;
+    opacity: 0; }
+  50% {
+    margin-left: 100;
+    opacity: 0.3; }
+  80% {
+    margin-left: 50px;
+    opacity: 0.7; }
+  100% {
+    margin-left: 0;
+    opacity: 1; } }
+.signup-form {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background-image: url(./../../images/bg.png);
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  display: none;
+  z-index: 2;
+  border-radius: 10px; }
+  .signup-form h1 {
+    margin-top: 35px;
+    font-family: "Permanent Marker", cursive;
+    color: #fff;
+    font-size: 40px; }
+  .signup-form input {
+    display: block;
+    width: 100%;
+    padding: 0 16px;
+    height: 44px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: "Permanent Marker", cursive; }
+  .signup-form .txtb {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px; }
+  .signup-form a, .signup-form p {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Permanent Marker", cursive;
+    font-size: 14px;
+    padding: 10px;
+    transition: 0.8s;
+    display: block;
+    cursor: pointer; }
+    .signup-form a:hover, .signup-form p:hover {
+      background: rgba(0, 0, 0, 0.3); }
+  .signup-form .rangoai {
+    display: flex; }
+  .signup-form .signup-btn {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    background: #487eb0;
+    color: #fff;
+    border-radius: 44px;
+    cursor: pointer;
+    transition: 0.8s; }
+    .signup-form .signup-btn:hover {
+      transform: scale(0.96); }
+
+.den-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  transition: 0.5;
+  width: 100%;
+  height: 100%;
+  background: #00000085;
+  z-index: 1;
+  display: none; }
+
+.hienthi {
+  display: block; }
+
+.hienthiform {
+  display: block;
+  animation: traiqua forwards 1.5s; }
+
+@-webkit-keyframes traiqua {
+  0% {
+    margin-left: 300px;
+    opacity: 0; }
+  50% {
+    margin-left: 100;
+    opacity: 0.3; }
+  80% {
+    margin-left: 50px;
+    opacity: 0.7; }
+  100% {
+    margin-left: 0;
+    opacity: 1; } }
+.background {
+  position: relative; }
+  .background img._1 {
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: 16%; }
+  .background img._2 {
+    max-width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 28%; }
+  .background .chu {
+    color: black; }
+    .background .chu .chu-nho {
+      position: absolute;
+      top: 20%;
+      left: 35%;
+      font-family: "Permanent Marker", cursive;
+      font-size: 2.5rem; }
+    .background .chu .chu-to {
+      position: absolute;
+      top: 26%;
+      left: 32%;
+      font-family: "Permanent Marker", cursive;
+      font-size: 5.5rem; }
+    .background .chu .chu-to2 {
+      position: absolute;
+      top: 38%;
+      left: 27%;
+      font-family: "Permanent Marker", cursive;
+      font-size: 4.5rem; }
+
+.thongtin .thongtin-tren img {
+  width: 3.5rem;
+  margin-top: 2rem; }
+.thongtin .thongtin-duoi {
+  display: flex; }
+  .thongtin .thongtin-duoi .duoi-trai ul li {
+    display: flex;
+    margin-bottom: 1rem; }
+    .thongtin .thongtin-duoi .duoi-trai ul li .tieude {
+      transition: 0.4s; }
+      .thongtin .thongtin-duoi .duoi-trai ul li .tieude:hover {
+        color: orange; }
+    .thongtin .thongtin-duoi .duoi-trai ul li .thoigian {
+      font-size: 0.9rem;
+      opacity: 0.6; }
+
+.bangxephang {
+  width: 100%;
+  height: auto; }
+  .bangxephang .trai {
+    width: 65%;
+    background: #ffa50021; }
+    .bangxephang .trai h1.top1 {
+      text-align: center;
+      font-family: "Pacifico", cursive;
+      padding-top: 1rem;
+      font-size: -webkit-xxx-large;
+      color: black;
+      font-weight: 700; }
+      .bangxephang .trai h1.top1 span {
+        font-size: -webkit-xxx-large;
+        font-weight: bolder;
+        color: #7a2d59;
+        border: 4px solid red;
+        padding: 0.5rem;
+        border-radius: 50%; }
+    .bangxephang .trai .monhoc select {
+      width: 12rem;
+      margin-left: 3rem;
+      height: 2rem;
+      font-size: 1.3rem;
+      text-align: center;
+      display: block;
+      font-weight: 500;
+      border-radius: 20px;
+      background: wheat;
+      padding-left: 1rem;
+      outline: none; }
+    .bangxephang .trai .chientich {
+      position: relative;
+      left: 42%;
+      display: flex; }
+      .bangxephang .trai .chientich p {
+        margin-left: 1rem;
+        font-size: 2rem;
+        position: absolute;
+        top: -1rem;
+        left: 25%;
+        font-weight: 800;
+        color: red; }
+    .bangxephang .trai .boc {
+      display: flex; }
+      .bangxephang .trai .boc .trai-trai {
+        width: 35%;
+        position: relative; }
+        .bangxephang .trai .boc .trai-trai .cup img {
+          width: 4rem;
+          margin-top: 4rem;
+          margin-left: 1rem; }
+        .bangxephang .trai .boc .trai-trai .avarta {
+          display: inline-block;
+          background: black;
+          width: 9rem;
+          height: 9rem;
+          position: absolute;
+          top: 2rem;
+          left: 6rem;
+          border-radius: 50%; }
+        .bangxephang .trai .boc .trai-trai .ngoai {
+          margin-left: 2rem;
+          margin-top: 4.5rem;
+          font-weight: 700;
+          color: purple; }
+      .bangxephang .trai .boc .trai-phai {
+        width: 65%;
+        margin-left: 4.5rem;
+        margin-top: 5rem; }
+        .bangxephang .trai .boc .trai-phai q {
+          margin-left: 2rem;
+          margin-top: 1rem;
+          width: 80%;
+          display: block;
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: red; }
+  .bangxephang .phai {
+    width: 35%;
+    background: #7a2d599e; }
+    .bangxephang .phai h1 {
+      text-align: center;
+      font-family: "Pacifico", cursive;
+      margin-top: 3rem;
+      font-size: 2rem; }
+    .bangxephang .phai .motnguoi .ten {
+      display: flex; }
+      .bangxephang .phai .motnguoi .ten p {
+        width: 4rem;
+        background: white;
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0; }
+      .bangxephang .phai .motnguoi .ten h4 {
+        font-size: 2rem;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+        color: orange; }
+    .bangxephang .phai .motnguoi .chamngon {
+      margin-left: 6rem;
+      width: 66%;
+      font-size: 1.5rem; }
+
+footer {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+  background: #152026;
+  margin-top: 2rem; }
+  footer .logo-footer {
+    margin-top: 1.5rem;
+    text-align: center; }
+    footer .logo-footer img {
+      width: 6rem; }
+  footer .row .col-sm-4 ._1 {
+    color: white;
+    width: 90%;
+    text-align: center; }
+  footer h3 {
+    color: white;
+    font-size: 1.25rem;
+    text-align: center; }
+
+li {
+  list-style: none; }
+
+@media (max-width: 768px) {
+  .lien-he {
+    width: 100%;
+    display: flex; }
+    .lien-he .logo {
+      margin: 0.5rem; }
+      .lien-he .logo img {
+        width: 5rem;
+        height: 4rem; }
+    .lien-he .btn1 {
+      width: 3.5rem !important;
+      height: 3.5rem !important;
+      margin-right: 1rem; }
+      .lien-he .btn1 i {
+        line-height: 3.5rem !important;
+        font-size: 1.5rem !important;
+        transition: 0.3s linear;
+        margin: -6px;
+        padding: 0; }
+      .lien-he .btn1:hover i {
+        transform: scale(1.5);
+        color: #f1f1f1; }
+      .lien-he .btn1::before {
+        content: "";
+        width: 120%;
+        height: 120%;
+        background: #3498db;
+        position: absolute;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%; }
+      .lien-he .btn1:hover::before {
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%; }
+    .lien-he u {
+      display: none; }
+    .lien-he .login-form {
+      display: flex;
+      margin: 1rem 2rem; }
+      .lien-he .login-form .btn {
+        width: 9rem;
+        height: 2.5rem;
+        font-size: initial;
+        padding: 0;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem; }
+
+  @keyframes aaa {
+    0% {
+      left: -110%;
+      top: 90%; }
+    50% {
+      left: 10%;
+      top: -30%; }
+    100% {
+      top: -10%;
+      left: -10%; } } }
+@media (max-width: 1060px) and (min-width: 769px) {
+  .lien-he u {
+    display: none; } }
+@media (max-width: 768px) {
+  .background img._2 {
+    max-width: 44%; }
+  .background .chu .chu-nho {
+    font-size: 1.7rem; }
+  .background .chu .chu-to {
+    font-size: 3.5rem; }
+  .background .chu .chu-to2 {
+    top: 40%;
+    font-size: 3.5rem; } }
+@media (max-width: 1060px) and (min-width: 769px) {
+  .background img._2 {
+    max-width: 44%; }
+  .background .chu .chu-nho {
+    font-size: 1.7rem; }
+  .background .chu .chu-to {
+    font-size: 3.5rem; }
+  .background .chu .chu-to2 {
+    top: 40%;
+    font-size: 3.5rem; } }
+@media (max-width: 575px) {
+  .lien-he {
+    width: 100%;
+    display: flex; }
+    .lien-he .logo {
+      margin: 0.5rem; }
+      .lien-he .logo img {
+        width: 5rem;
+        height: 4rem; }
+    .lien-he .btn1 {
+      width: 3rem !important;
+      height: 3rem !important; }
+      .lien-he .btn1 i {
+        line-height: 3rem !important;
+        font-size: 1.1rem !important;
+        transition: 0.3s linear;
+        margin: -6px;
+        padding: 0; }
+      .lien-he .btn1:hover i {
+        transform: scale(1.5);
+        color: #f1f1f1; }
+      .lien-he .btn1::before {
+        content: "";
+        width: 120%;
+        height: 120%;
+        background: #3498db;
+        position: absolute;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%; }
+      .lien-he .btn1:hover::before {
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%; }
+    .lien-he u {
+      display: none; }
+    .lien-he .login-form1 {
+      display: block;
+      margin: 0; }
+      .lien-he .login-form1 .btn {
+        width: 7rem;
+        height: 2rem;
+        font-size: initial;
+        padding: 0;
+        margin: 0.2rem 1rem; }
+        .lien-he .login-form1 .btn:first-child {
+          margin-bottom: 0.5rem;
+          margin-top: 0.5rem; }
+
+  @keyframes aaa {
+    0% {
+      left: -110%;
+      top: 90%; }
+    50% {
+      left: 10%;
+      top: -30%; }
+    100% {
+      top: -10%;
+      left: -10%; } } }
+@media (max-width: 575px) {
+  .background img._2 {
+    max-width: 44%; }
+  .background .chu .chu-nho {
+    font-size: 1.1rem; }
+  .background .chu .chu-to {
+    font-size: 2rem; }
+  .background .chu .chu-to2 {
+    top: 40%;
+    font-size: 2rem; } }
+@media (max-width: 575px) {
+  .thongtin .thongtin-tren img {
+    width: 3.5rem;
+    margin-top: 2rem; }
+  .thongtin .thongtin-duoi {
+    display: block; }
+    .thongtin .thongtin-duoi .duoi-trai {
+      width: 100%; }
+      .thongtin .thongtin-duoi .duoi-trai ul li {
+        display: block;
+        margin-bottom: 1rem; }
+        .thongtin .thongtin-duoi .duoi-trai ul li .tieude {
+          transition: 0.4s; }
+          .thongtin .thongtin-duoi .duoi-trai ul li .tieude:hover {
+            color: orange; }
+        .thongtin .thongtin-duoi .duoi-trai ul li .thoigian {
+          font-size: 0.9rem;
+          opacity: 0.6; } }
+@media (max-width: 575px) {
+  .bangxephang {
+    height: auto; }
+    .bangxephang .trai h1.top1 {
+      padding-top: 1rem;
+      color: black;
+      font-weight: 700;
+      font-size: 2rem; }
+      .bangxephang .trai h1.top1 span {
+        font-weight: bolder;
+        border: 4px solid red;
+        padding: 0.5rem;
+        border-radius: 50%; }
+    .bangxephang .trai .monhoc select {
+      width: 9rem;
+      margin-left: 1rem;
+      height: 2rem;
+      font-size: 1rem; }
+    .bangxephang .trai .chientich {
+      left: 32%;
+      top: 2%; }
+      .bangxephang .trai .chientich h3 {
+        font-size: 1.5rem; }
+      .bangxephang .trai .chientich p {
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        top: -0.5rem;
+        left: 32%; }
+    .bangxephang .trai .boc {
+      display: flex; }
+      .bangxephang .trai .boc .trai-trai {
+        width: 35%; }
+        .bangxephang .trai .boc .trai-trai .cup img {
+          width: 3rem; }
+        .bangxephang .trai .boc .trai-trai .avarta {
+          width: 8rem;
+          height: 8rem;
+          left: 4rem; }
+        .bangxephang .trai .boc .trai-trai .ngoai {
+          margin-left: 0; }
+      .bangxephang .trai .boc .trai-phai {
+        width: 65%;
+        margin-left: 4.5rem;
+        margin-top: 5rem; }
+        .bangxephang .trai .boc .trai-phai h2 {
+          font-size: 1.5rem;
+          margin-top: 6rem; }
+        .bangxephang .trai .boc .trai-phai q {
+          font-size: 1rem; }
+    .bangxephang .phai {
+      width: 35%; }
+      .bangxephang .phai h1 {
+        margin-top: 3rem;
+        font-size: 2rem; }
+      .bangxephang .phai .motnguoi .ten {
+        display: flex; }
+        .bangxephang .phai .motnguoi .ten p {
+          width: 3rem;
+          font-size: 2rem; }
+        .bangxephang .phai .motnguoi .ten h4 {
+          font-size: 1.5rem; }
+      .bangxephang .phai .motnguoi .chamngon {
+        margin-left: 6rem;
+        width: 66%;
+        font-size: 1rem; } }
+
+/*# sourceMappingURL=style.css.map */

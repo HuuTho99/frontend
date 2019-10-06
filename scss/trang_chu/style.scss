@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  a{text-decoration: none;}
+
+
+@import "lien-he";
+@import "menu";
+// @import "variable";
+@import "form-dangnhap";
+@import "form-dangky";
+@import "background-trangchu";
+@import "noidung-trangchu";
+@import "bangxephang";
+@import "footer";
+
+li{list-style: none;}
+//ipad
+@import "ipad-lienhe";
+@import "ipad-_background-trangchu";
+
+//mobile
+@import "mobile-lienhe";
+@import "mobile-background-trangchu";
+@import "mobile-noidung-trangchu";
+@import "mobile-bangxephang";

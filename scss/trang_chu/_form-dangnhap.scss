@@ -1,0 +1,105 @@
+@import "variable";
+
+.login-form {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background-image: url(./../../images/bg.png);
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  display: none;
+  z-index: 2;
+  border-radius: 10px;
+  h1 {
+    margin-top: 100px;
+    font-family: "Permanent Marker", cursive;
+    color: #fff;
+    font-size: 40px;
+  }
+  input {
+    display: block;
+    width: 100%;
+    padding: 0 16px;
+    height: 44px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: "Permanent Marker", cursive;
+  }
+  .txtb {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+  }
+  a,p {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Permanent Marker", cursive;
+    font-size: 14px;
+    padding: 10px;
+    transition: 0.8s;
+    display: block;
+    cursor: pointer;
+    &:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+  .rangoai {
+    display: flex;
+  }
+  .signup-btn {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    background: #487eb0;
+    color: #fff;
+    border-radius: 44px;
+    cursor: pointer;
+    transition: 0.8s;
+    &:hover{
+        transform: scale(0.96);
+    }
+  }
+}
+
+.den-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  transition: 0.5;
+  width: 100%;
+  height: 100%;
+  background: #00000085;
+  z-index: 1;
+  display: none;
+}
+.hienthi {
+  display: block;
+}
+.hienthiform {
+  display: block;
+  animation: traiqua forwards 1.5s;
+}
+@-webkit-keyframes traiqua {
+  0% {
+    margin-left: 300px;
+    opacity: 0;
+  }
+  50% {
+    margin-left: 100;
+    opacity: 0.3;
+  }
+  80% {
+    margin-left: 50px;
+    opacity: 0.7;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}

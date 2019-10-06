@@ -1,0 +1,38 @@
+@media(max-width: 768px){
+    .background {
+        img._2 {
+            max-width: 44%;
+        }
+        .chu {
+          .chu-nho {
+            font-size: 1.7rem;
+          }
+          .chu-to {
+            font-size: 3.5rem;
+          }
+          .chu-to2 {
+            top: 40%;
+            font-size: 3.5rem;
+          }
+        }
+      }
+}
+@media (max-width:1060px) and (min-width:769px){
+    .background {
+        img._2 {
+            max-width: 44%;
+        }
+        .chu {
+          .chu-nho {
+            font-size: 1.7rem;
+          }
+          .chu-to {
+            font-size: 3.5rem;
+          }
+          .chu-to2 {
+            top: 40%;
+            font-size: 3.5rem;
+          }
+        }
+      }
+  }

@@ -1,0 +1,38 @@
+.background {
+  position: relative;
+  img._1 {
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: 16%;
+  }
+  img._2 {
+    max-width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 28%;
+  }
+  .chu {
+    color: black;
+    .chu-nho {
+      position: absolute;
+      top: 20%;
+      left: 35%;
+      font-family: "Permanent Marker", cursive;
+      font-size: 2.5rem;
+    }
+    .chu-to {
+      position: absolute;
+      top: 26%;
+      left: 32%;
+      font-family: "Permanent Marker", cursive;
+      font-size: 5.5rem;
+    }
+    .chu-to2 {
+      position: absolute;
+      top: 38%;
+      left: 27%;
+      font-family: "Permanent Marker", cursive;
+      font-size: 4.5rem;
+    }
+  }
+}

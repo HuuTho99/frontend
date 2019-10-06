@@ -1,0 +1,28 @@
+footer {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+  background: #152026;
+  margin-top: 2rem;
+  .logo-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    img {
+      width: 6rem;
+    }
+  }
+  .row {
+    .col-sm-4 {
+      ._1 {
+        color: white;
+        width: 90%;
+        text-align: center;
+      }
+    }
+  }
+  h3{
+      color: white;
+      font-size: 1.25rem;
+      text-align: center;
+  }
+}

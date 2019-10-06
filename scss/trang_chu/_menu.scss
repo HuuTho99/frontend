@@ -1,0 +1,34 @@
+@import "variable";
+
+.menu {
+  background-color: orange !important;
+  button{
+      z-index: 20;float: right;
+      .bg-tho{
+          background-color: white;
+          color: rgb(0, 0, 0);
+          border-color: rgba(0, 0, 0, 0.43);
+      }
+    }
+  .collapse {
+    ul {
+      li {
+        list-style: none;
+        display: inline-block;
+        font-size: 1.3rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.5s;
+        .nav-link {
+          color: white;
+        }
+        &:hover{
+            background: orangered;
+            transform: scale(1.1);
+            border-radius: 10px;
+        }
+        padding-right: 1rem;
+      }
+    }
+  }
+}

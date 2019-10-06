@@ -1,0 +1,31 @@
+@import "variable";
+
+.thongtin {
+  .thongtin-tren {
+    img {
+      width: 3.5rem;
+      margin-top: 2rem;
+    }
+  }
+  .thongtin-duoi {
+    display: flex;
+    .duoi-trai {
+      ul {
+        li {
+          display: flex;
+          margin-bottom: 1rem;
+          .tieude {
+            transition: 0.4s;
+            &:hover {
+              color: $color-main;
+            }
+          }
+          .thoigian {
+            font-size: 0.9rem;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{text-decoration: none;}
+
+@import "./../trang_chu/lien-he";
+@import "./../trang_chu/menu";
+@import "thanh-monhoc";
+@import "noidung-monhoc";
+
+
+li{list-style: none;}
+//ipad
+@import "./../trang_chu/ipad-lienhe";
+
+
+//mobile
+@import "./../trang_chu/mobile-lienhe";
+@import "mobile-thanh-monhoc";

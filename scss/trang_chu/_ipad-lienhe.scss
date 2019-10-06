@@ -1,0 +1,81 @@
+@import "variable";
+
+@media (max-width: 768px) {
+  .lien-he {
+    width: 100%;
+    display: flex;
+    .logo {
+      margin: 0.5rem;
+      img {
+        width: 5rem;
+        height: 4rem;
+      }
+    }
+    .btn1 {
+        width: 3.5rem !important;
+        height: 3.5rem !important;
+        margin-right: 1rem;
+      i {
+        line-height: 3.5rem !important;
+        font-size: 1.5rem !important;
+        transition: 0.3s linear;
+        margin: -6px;
+        padding: 0;
+      }
+      &:hover i {
+        transform: scale(1.5);
+        color: #f1f1f1;
+      }
+      &::before {
+        content: "";
+        width: 120%;
+        height: 120%;
+        background: #3498db;
+        position: absolute;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+      }
+      &:hover::before {
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%;
+      }
+    }
+    u {
+      display: none;
+    }
+    .login-form {
+        display: flex;
+        margin: 1rem 2rem;
+      .btn {
+        width: 9rem;
+    height: 2.5rem;
+    font-size: initial;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+      }
+    }
+  }
+  @keyframes aaa {
+    0% {
+      left: -110%;
+      top: 90%;
+    }
+    50% {
+      left: 10%;
+      top: -30%;
+    }
+    100% {
+      top: -10%;
+      left: -10%;
+    }
+  }
+}
+
+@media (max-width:1060px) and (min-width:769px){
+  .lien-he {u {
+    display: none;
+  }}
+}
